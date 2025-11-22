@@ -139,6 +139,21 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <configuration>
+                    <!-- Replace with your DB connection -->
+                    <url>jdbc:mysql://localhost:3306/hotel</url>
+                    <user>root</user>
+                    <password>nizarIng_1983</password>
+
+                    <!-- Path where your SQL migrations are located -->
+                    <locations>
+                        <location>filesystem:src/main/resources/db/migration</location>
+                    </locations>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
