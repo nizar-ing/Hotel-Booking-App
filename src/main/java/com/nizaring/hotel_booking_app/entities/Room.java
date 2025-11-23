@@ -28,14 +28,14 @@ public class Room {
     @Enumerated(EnumType.STRING)
     private RoomType roomType;
 
-    @Column(name = "price")
-    private BigDecimal price;
+    @Column(name = "price_per_night")
+    private BigDecimal pricePerNight;
 
-    @Column(name = "availability")
-    private Boolean availability = false;
+    @Column(name = "capacity")
+    private Integer capacity;
 
-    @Column(name = "created_at")
-    private LocalDate createdAt;
+    @Column(name = "description")
+    private String description;
 
     @Column(name = "image_url")
     private String imageUrl;
