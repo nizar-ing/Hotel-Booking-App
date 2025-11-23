@@ -2,6 +2,7 @@ package com.nizaring.hotel_booking_app.repositories;
 
 import com.nizaring.hotel_booking_app.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
