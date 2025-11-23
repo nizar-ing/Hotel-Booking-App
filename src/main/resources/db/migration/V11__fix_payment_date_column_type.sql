@@ -1,0 +1,2 @@
+ALTER TABLE payments
+    MODIFY COLUMN payment_date DATETIME NOT NULL;

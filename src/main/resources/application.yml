@@ -12,8 +12,16 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true  # Pretty print SQL in logs
     hibernate:
-      ddl-auto: validate   # or update / create / create-drop depending on your needs
+      ddl-auto: validate
+    show-sql: true  # Show SQL queries in console# or update / create / create-drop depending on your needs
 
 server:
   port: 9090
+
+# Logging (optional, for debugging)
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
