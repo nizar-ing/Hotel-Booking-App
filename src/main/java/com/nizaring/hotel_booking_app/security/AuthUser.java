@@ -1,6 +1,7 @@
 package com.nizaring.hotel_booking_app.security;
 
 import com.nizaring.hotel_booking_app.entities.User;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
@@ -12,12 +13,9 @@ import java.util.List;
 
 @Getter
 @Setter
+@AllArgsConstructor
 public class AuthUser implements UserDetails {
     private User user;
-
-    public AuthUser(User user) {
-        this.user = user;
-    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
