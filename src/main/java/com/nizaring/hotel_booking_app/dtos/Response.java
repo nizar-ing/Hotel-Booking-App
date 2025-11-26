@@ -9,6 +9,7 @@ import java.util.List;
 
 
 @Getter
+@Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Response {
 
@@ -44,69 +45,5 @@ public class Response {
 
     private final LocalDateTime timestamp = LocalDateTime.now();
 
-    // Manual setters
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-
-    public void setRole(UserRole role) {
-        this.role = role;
-    }
-
-    public void setIsActive(Boolean isActive) {
-        this.isActive = isActive;
-    }
-
-    public void setExpirationTime(String expirationTime) {
-        this.expirationTime = expirationTime;
-    }
-
-    public void setUser(UserDTO user) {
-        this.user = user;
-    }
-
-    public void setUsers(List<UserDTO> users) {
-        this.users = users;
-    }
-
-    public void setBooking(BookingDTO booking) {
-        this.booking = booking;
-    }
-
-    public void setBookings(List<BookingDTO> bookings) {
-        this.bookings = bookings;
-    }
-
-    public void setRoom(RoomDTO room) {
-        this.room = room;
-    }
-
-    public void setRooms(List<RoomDTO> rooms) {
-        this.rooms = rooms;
-    }
-
-    public void setPayment(PaymentDTO payment) {
-        this.payment = payment;
-    }
-
-    public void setPayments(List<PaymentDTO> payments) {
-        this.payments = payments;
-    }
-
-    public void setNotification(NotificationDTO notification) {
-        this.notification = notification;
-    }
-
-    public void setNotifications(List<NotificationDTO> notifications) {
-        this.notifications = notifications;
-    }
 }
 
