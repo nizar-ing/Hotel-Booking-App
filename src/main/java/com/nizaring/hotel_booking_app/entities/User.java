@@ -51,6 +51,6 @@ public class User {
 
 
     @Column(name = "created_at")
-    private LocalDate createdAt;
+    private LocalDate createdAt = LocalDate.now();
 
 }

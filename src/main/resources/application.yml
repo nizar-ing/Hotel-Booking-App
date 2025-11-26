@@ -1,12 +1,23 @@
 spring:
   application:
     name: Hotel_Booking_App
-
   datasource:
     url: jdbc:mysql://localhost:3306/hotel?createDatabaseIfNotExist=true
     username: root
     password: nizarIng_1983
     driver-class-name: com.mysql.cj.jdbc.Driver
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nizar.ilahi@gmail.com
+    password: avqq nwir jxkf pokm
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
 
   jpa:
     properties:

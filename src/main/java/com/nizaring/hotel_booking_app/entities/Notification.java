@@ -37,6 +37,6 @@ public class Notification {
     private NotificationType type;
 
     @Column(name = "created_at")
-    private LocalDate createdAt;
+    private LocalDate createdAt = LocalDate.now();;
 
 }

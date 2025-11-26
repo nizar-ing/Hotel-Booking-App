@@ -49,7 +49,7 @@ public class Booking {
     private String bookingReference;
 
     @Column(name = "created_at")
-    private LocalDate createdAt;
+    private LocalDate createdAt = LocalDate.now();
 
     @Column(name = "booking_status")
     @Enumerated(EnumType.STRING)
