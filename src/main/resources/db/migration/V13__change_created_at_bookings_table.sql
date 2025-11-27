@@ -1,0 +1,3 @@
+-- Change created_at from DATE to DATETIME
+ALTER TABLE bookings
+    MODIFY COLUMN created_at DATETIME DEFAULT CURRENT_TIMESTAMP;

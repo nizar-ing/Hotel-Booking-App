@@ -3,16 +3,12 @@ package com.nizaring.hotel_booking_app.entities;
 import com.nizaring.hotel_booking_app.enums.BookingStatus;
 import com.nizaring.hotel_booking_app.enums.PaymentStatus;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -49,7 +45,7 @@ public class Booking {
     private String bookingReference;
 
     @Column(name = "created_at")
-    private LocalDate createdAt = LocalDate.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     @Column(name = "booking_status")
     @Enumerated(EnumType.STRING)
