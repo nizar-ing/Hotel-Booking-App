@@ -33,8 +33,8 @@ public class RoomServiceImpl implements RoomService {
 
 //    private static final String IMAGE_DIRECTORY = System.getProperty("user.dir") + "/product-image/";
 
-    //image directory for our frontens appp
-    private static final String IMAGE_DIRECTORY_FRONTEND = "/Users/dennismac/phegonDev/hotel-react-frontend/public/rooms/";
+    //image directory for our frontend app
+    private static final String IMAGE_DIRECTORY_FRONTEND = "C:/Users/DELL/OneDrive/Bureau/rooms/";
 
 
 
