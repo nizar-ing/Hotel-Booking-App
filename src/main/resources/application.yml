@@ -18,6 +18,10 @@ spring:
           starttls:
             enable: true
             required: true
+  servlet:
+    multipart:
+      max-file-size: 2GB
+      max-request-size: 2GB
 
   jpa:
     properties:
