@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService {
         userToSave.setFirstName(registrationRequest.getFirstName());
         userToSave.setLastName(registrationRequest.getLastName());
         userToSave.setEmail(registrationRequest.getEmail());
-        userToSave.setPassword(registrationRequest.getPassword());
+        userToSave.setPassword(passwordEncoder.encode(registrationRequest.getPassword()));
         userToSave.setRole(role);
         userToSave.setPhoneNumber(registrationRequest.getPhoneNumber());
         userToSave.setIsActive(Boolean.TRUE);
